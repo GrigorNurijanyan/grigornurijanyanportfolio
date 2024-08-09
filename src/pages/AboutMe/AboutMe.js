@@ -53,7 +53,7 @@ const AboutMe = () => {
             My skills in problem-solving and attention to detail are evident in
             my work on various high-impact projects, where I focus on enhancing
             user experience through meticulous coding and design integration. I
-            am proficient in multiple languages and hold a Bachelor and Master's
+            am proficient in multiple languages and hold a Bachelor and Masters
             degree in Computer Science from the National Polytechnic University
             of Armenia. My work is driven by a commitment to quality and a
             passion for continuous learning and innovation in the field of web
