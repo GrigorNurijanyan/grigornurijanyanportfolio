@@ -18,6 +18,7 @@ const Home = () => {
       setLoading(false);
     }, 100);
   }, []);
+
   return (
     <main className="overflow-x-hidden flex min-h-screen flex-col items-center justify-between">
       <HomePage />

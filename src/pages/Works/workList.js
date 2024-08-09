@@ -1,27 +1,29 @@
+import { baseURL } from "@/utils/utils";
+
 export const worksList = [
   {
     name: "Matador AI",
-    image: "http://localhost:3000/publicAssets/matador.jpg",
+    image: `${baseURL}/publicAssets/matador.jpg`,
     link: "https://matador.ai/",
   },
   {
     name: "14Cargo",
-    image: "http://localhost:3000/publicAssets/14cargo.jpg",
+    image: `${baseURL}/publicAssets/14cargo.jpg`,
     link: "https://14cargo.ru/",
   },
   {
     name: "Ubicross Pro",
-    image: "http://localhost:3000/publicAssets/ubicrosspro.jpg",
+    image: `${baseURL}/publicAssets/ubicrosspro.jpg`,
     link: "https://ubicross.pro/",
   },
   {
     name: "Anthony P. Richards",
-    image: "http://localhost:3000/publicAssets/anthonyprichards.jpg",
+    image: `${baseURL}/publicAssets/anthonyprichards.jpg`,
     link: "http://anthonyprichards.com/",
   },
   {
     name: "Matador Web Extension",
-    image: "http://localhost:3000/publicAssets/matadorextension.jpg",
+    image: `${baseURL}/publicAssets/matadorextension.jpg`,
     link: "https://www.matador.ai/extension/",
   },
 ];

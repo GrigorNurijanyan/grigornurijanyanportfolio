@@ -16,7 +16,6 @@ const Skills = () => {
         (entries, observer) => {
           entries.forEach((entry) => {
             if (entry.isIntersecting) {
-              console.log("Oh, you found your page part!");
               setIsShow(true);
               observer.unobserve(entry.target);
             }
