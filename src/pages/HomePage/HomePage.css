@@ -5,6 +5,7 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    position: relative;
 }
 
 .home_page_banner h1 {
@@ -30,4 +31,45 @@
 .home_page_banner h1::after {
     right: 0;
     margin-right: -50px;
+}
+
+  
+
+
+.home_page_banner .shade {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    pointer-events: none;
+    opacity: 0;
+    background: rgba(0, 0, 0, 0.9);
+    z-index: 1;
+    cursor: zoom-out;
+}
+
+.home_page_banner.open .shade {
+    pointer-events: auto;
+    opacity: 1;
+}
+
+.home_page_banner .personal_image {
+    cursor: zoom-in;
+}
+
+.home_page_banner.open .personal_image {
+    width: auto;
+    height: 500px;
+    max-width: 100%;
+    margin: auto;
+    z-index: 2;
+    border-radius: 0;
+    box-shadow: none;
+    position: absolute;
+    top: 15%;
+}
+
+.home_page_banner.open .personal_image {
+    cursor: zoom-out;
 }

@@ -1,4 +1,5 @@
 import React from "react";
+import { motion } from "framer-motion";
 
 const Timeline = ({ events }) => {
   return (
@@ -6,9 +7,15 @@ const Timeline = ({ events }) => {
       {events?.map((item, index) => {
         return (
           <React.Fragment key={index}>
-            <div className="flex relative items-center text-center justify-center bg-neutral-300 m-auto w-fit pl-3 pr-3 pt-1 pb-1 rounded-md font-uppercase text-md1 font-semibold	uppercase z-10">
+            <motion.div
+              initial={{ y: 100, opacity: 0 }}
+              whileInView={{ y: 0, opacity: 1 }}
+              transition={{ duration: 0.4 }}
+              viewport={{ once: true }}
+              className="flex relative items-center text-center justify-center bg-neutral-300 m-auto w-fit pl-3 pr-3 pt-1 pb-1 rounded-md font-uppercase text-md1 font-semibold	uppercase z-10"
+            >
               {item.title}
-            </div>
+            </motion.div>
             {item?.children?.map((childItem, index) => {
               return (
                 <div
@@ -19,7 +26,13 @@ const Timeline = ({ events }) => {
                     {childItem.icon}
                   </div>
 
-                  <div className="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] bg-white p-4 rounded border border-slate-200 shadow">
+                  <motion.div
+                    initial={{ y: 100, opacity: 0 }}
+                    whileInView={{ y: 0, opacity: 1 }}
+                    transition={{ duration: 0.4 }}
+                    viewport={{ once: true }}
+                    className="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] bg-white p-4 rounded border border-slate-200 shadow"
+                  >
                     <div className="flex items-center justify-between space-x-2 mb-1">
                       <div className="font-bold text-slate-900">
                         {childItem.role}
@@ -31,7 +44,7 @@ const Timeline = ({ events }) => {
                         </span>
                       </time>
                     </div>
-                    <span class="iconify mdi-light--home"></span>
+                    <span className="iconify mdi-light--home"></span>
                     <ul className="list-disc pl-4 grid gap-3">
                       {childItem?.description?.map((descItem, index) => {
                         return (
@@ -41,7 +54,7 @@ const Timeline = ({ events }) => {
                         );
                       })}
                     </ul>
-                  </div>
+                  </motion.div>
                 </div>
               );
             })}

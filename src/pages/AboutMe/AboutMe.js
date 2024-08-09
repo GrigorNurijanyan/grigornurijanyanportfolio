@@ -1,12 +1,26 @@
+import React from "react";
 import Container from "@/components/Container/Container";
 import Title from "@/components/Title/Title";
-import React from "react";
+import { motion } from "framer-motion";
 
 const AboutMe = () => {
   return (
     <Container>
-      <Title>About Me</Title>
-      <div className="grid xl:grid-cols-3 gap-4 md:grid-cols-1">
+      <motion.div
+        initial={{ y: 100, opacity: 0 }}
+        whileInView={{ y: 0, opacity: 1 }}
+        transition={{ duration: 0.6 }}
+        viewport={{ once: true }}
+      >
+        <Title>About Me</Title>
+      </motion.div>
+      <motion.div
+        initial={{ y: 100, opacity: 0 }}
+        whileInView={{ y: 0, opacity: 1 }}
+        transition={{ duration: 1 }}
+        viewport={{ once: true }}
+        className="grid xl:grid-cols-3 gap-4 md:grid-cols-1"
+      >
         <div className="grid gap-1">
           <div className="flex items-center">
             <span className="min-w-24 font-bold text-md">Full Name:</span>
@@ -46,7 +60,7 @@ const AboutMe = () => {
             development.
           </p>
         </div>
-      </div>
+      </motion.div>
     </Container>
   );
 };

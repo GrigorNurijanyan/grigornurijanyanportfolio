@@ -1,7 +1,8 @@
 import { Titillium_Web } from "next/font/google";
-import { NextUIProvider } from "@nextui-org/react";
+import { CircularProgress, NextUIProvider } from "@nextui-org/react";
 import ScrollToTopButton from "@/components/ScrollToTopButton/ScrollToTopButton";
 import "./globals.css";
+import { Suspense } from "react";
 
 const titillium_Web = Titillium_Web({
   subsets: ["latin"],
@@ -18,7 +19,9 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={titillium_Web.className}>
         <NextUIProvider>
-          {children}
+          <Suspense fallback={<CircularProgress aria-label="Loading..." />}>
+            {children}
+          </Suspense>
           <ScrollToTopButton />
         </NextUIProvider>
       </body>
