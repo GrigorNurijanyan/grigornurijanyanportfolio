@@ -6,7 +6,6 @@ import SVGInstagramIcon from "@/assets/SVG/SVGInstagramIcon";
 import SVGLinkedInIcon from "@/assets/SVG/SVGLinkedInIcon";
 import { motion, useDomEvent } from "framer-motion";
 import "./HomePage.css";
-import { baseURL } from "@/utils/utils";
 
 const kuashan = Kaushan_Script({
   subsets: ["latin"],
@@ -53,7 +52,7 @@ const HomePage = () => {
         <Avatar
           isBordered
           color="default"
-          src={`${baseURL}/publicAssets/grigor.jpg`}
+          src={`/publicAssets/grigor.jpg`}
           className="w-44 h-44 text-large personal_image"
           onClick={() => setOpen(!isOpen)}
         />
