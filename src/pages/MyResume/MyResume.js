@@ -2,7 +2,7 @@ import React from "react";
 import Container from "@/components/Container/Container";
 import Title from "@/components/Title/Title";
 import Timeline from "@/components/Timeline/Timeline";
-import { timelineElements } from "./timelienEvents";
+import { timelineElements } from "../../app/data/timelienEvents";
 import { motion } from "framer-motion";
 
 const MyResume = () => {

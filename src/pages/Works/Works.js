@@ -4,7 +4,7 @@ import Container from "@/components/Container/Container";
 import Title from "@/components/Title/Title";
 import { Card, CardBody, CardHeader, Image } from "@nextui-org/react";
 import { motion } from "framer-motion";
-import { worksList } from "./workList";
+import { worksList } from "../../app/data/workList";
 
 const Works = () => {
   return (

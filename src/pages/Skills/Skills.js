@@ -2,7 +2,7 @@ import Container from "@/components/Container/Container";
 import Title from "@/components/Title/Title";
 import { CircularProgress } from "@nextui-org/react";
 import React from "react";
-import { skillsList } from "./skillsList";
+import { skillsList } from "../../app/data/skillsList";
 import { motion } from "framer-motion";
 
 const Skills = () => {
