@@ -24,7 +24,19 @@ const HireMe = () => {
             maintaining high-traffic sites, I can turn your vision into reality.
             Lets build something great together!
           </p>
-          <Button className={"flex mx-auto mt-5"}>Contact Me</Button>
+          <Button
+            onClick={() => {
+              const contactPart = document.getElementById("contactPage");
+              if (contactPart) {
+                contactPart.scrollIntoView({
+                  behavior: "smooth",
+                });
+              }
+            }}
+            className={"flex mx-auto mt-5"}
+          >
+            Contact Me
+          </Button>
         </motion.div>
       </Container>
     </div>

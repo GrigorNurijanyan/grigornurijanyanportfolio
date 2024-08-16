@@ -6,7 +6,10 @@ import { motion } from "framer-motion";
 
 const Contact = () => {
   return (
-    <div className="flex flex-col-reverse sm:flex-row w-full">
+    <div
+      id={"contactPage"}
+      className="flex flex-col-reverse sm:flex-row w-full"
+    >
       <motion.div
         initial={{ x: -100, opacity: 0 }}
         whileInView={{ x: 0, opacity: 1 }}
