@@ -3,6 +3,9 @@ import Image from "next/image";
 import ContactImg from "../../assets/contact.jpg";
 import { Button, Input, Textarea } from "@nextui-org/react";
 import { motion } from "framer-motion";
+import { Resend } from "resend";
+
+const resend = new Resend("re_8HrTv1gH_GFbfQTq9suxM8sxuqYaLb4LZ");
 
 const Contact = () => {
   return (
@@ -77,7 +80,23 @@ const Contact = () => {
             minRows={8}
             variant="bordered"
           />
-          <Button className="w-fit">Send Message</Button>
+          <Button
+            className="w-fit"
+            onClick={() => {
+              try {
+                resend.emails.send({
+                  from: "onboarding@resend.dev",
+                  to: "grigornurijanyan@gmail.com",
+                  subject: "Hello World",
+                  html: "<p>Congrats on sending your <strong>first email</strong>!</p>",
+                });
+              } catch (error) {
+                console.error("error", error);
+              }
+            }}
+          >
+            Send Message
+          </Button>
         </div>
       </motion.div>
     </div>

@@ -39,7 +39,6 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 
 * Hire me click button to move contact page
 
-- Aws EC2 try to deploy
-- S3 image link try to deploy
+* Github action
 
 * FavIcon
