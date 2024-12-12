@@ -5,7 +5,7 @@ const nextConfig = {
   // basePath: 'https://grigornurijanyan.github.io/grigornurijanyanportfolio',
   assetPrefix: 'https://grigornurijanyan.github.io/grigornurijanyanportfolio/',
   images: {
-    domains: ["images.unsplash.com"],
+    domains: ["https://grigornurijanyan.github.io/grigornurijanyanportfolio"],
   },
 };
 
