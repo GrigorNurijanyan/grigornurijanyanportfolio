@@ -1,29 +1,33 @@
-import React from "react";
+import matador from '../../assets/matador.jpg';
+import cargo from '../../assets/14cargo.jpg';
+import ubicrosspro from '../../assets/ubicrosspro.jpg';
+import anthonyprichards from '../../assets/anthonyprichards.jpg';
+import matadorextension from '../../assets/matadorextension.jpg';
 
 export const worksList = [
   {
     name: "Matador AI",
-    image: `/publicAssets/matador.jpg`,
+    image: matador.src,
     link: "https://matador.ai/",
   },
   {
     name: "14Cargo",
-    image: `/publicAssets/14cargo.jpg`,
+    image: cargo.src,
     link: "https://14cargo.ru/",
   },
   {
     name: "Ubicross Pro",
-    image: `/publicAssets/ubicrosspro.jpg`,
+    image: ubicrosspro.src,
     link: "https://ubicross.pro/",
   },
   {
     name: "Anthony P. Richards",
-    image: `/publicAssets/anthonyprichards.jpg`,
+    image: anthonyprichards.src,
     link: "http://anthonyprichards.com/",
   },
   {
     name: "Matador Web Extension",
-    image: `/publicAssets/matadorextension.jpg`,
+    image: matadorextension.src,
     link: "https://www.matador.ai/extension/",
   },
 ];

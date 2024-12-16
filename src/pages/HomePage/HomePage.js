@@ -4,7 +4,8 @@ import { Avatar, Link } from "@nextui-org/react";
 import SVGFacebookIcon from "@/assets/SVG/SVGFacebookIcon";
 import SVGInstagramIcon from "@/assets/SVG/SVGInstagramIcon";
 import SVGLinkedInIcon from "@/assets/SVG/SVGLinkedInIcon";
-import { motion, useDomEvent } from "framer-motion";
+import { motion } from "framer-motion";
+import profileImage from '../../assets/profpic.jpeg';
 import "./HomePage.css";
 
 const kuashan = Kaushan_Script({
@@ -32,9 +33,8 @@ const HomePage = () => {
   }, [isOpen]);
   return (
     <div
-      className={`home_page_banner flex justify-center items-center ${
-        isOpen ? "open" : ""
-      }`}
+      className={`home_page_banner flex justify-center items-center ${isOpen ? "open" : ""
+        }`}
     >
       <motion.div
         initial={{ scale: 0.5 }}
@@ -52,7 +52,7 @@ const HomePage = () => {
         <Avatar
           isBordered
           color="default"
-          src={`/publicAssets/grigor.jpg`}
+          src={profileImage.src}
           className="w-44 h-44 text-large personal_image"
           onClick={() => setOpen(!isOpen)}
         />
