@@ -1,13 +1,13 @@
 "use client";
 import React, { useEffect, useState } from "react";
-import AboutMe from "@/pages/AboutMe/AboutMe";
-import Contact from "@/pages/Contact/Contact";
+import AboutMeSection from "@/pages/AboutMeSection/AboutMeSection";
+import ContactSection from "@/pages/ContactSection/ContactSection";
 import Footer from "@/pages/Footer/Footer";
-import HireMe from "@/pages/HireMe/HireMe";
-import HomePage from "@/pages/HomePage/HomePage";
-import MyResume from "@/pages/MyResume/MyResume";
-import Skills from "@/pages/Skills/Skills";
-import Works from "@/pages/Works/Works";
+import HireMeSection from "@/pages/HireMeSection/HireMeSection";
+import HeroSection from "@/pages/HeroSection/HeroSection";
+import ResumeSection from "@/pages/ResumeSection/ResumeSection";
+import SkillsSection from "@/pages/SkillsSection/SkillsSection";
+import WorksSection from "@/pages/WorksSection/WorksSection";
 import { CircularProgress } from "@nextui-org/react";
 
 const Home = () => {
@@ -21,13 +21,13 @@ const Home = () => {
 
   return (
     <main className="overflow-x-hidden flex min-h-screen flex-col items-center justify-between">
-      <HomePage />
-      <AboutMe />
-      <MyResume />
-      <Works />
-      <Skills />
-      <HireMe />
-      <Contact />
+      <HeroSection />
+      <AboutMeSection />
+      <ResumeSection />
+      <WorksSection />
+      <SkillsSection />
+      <HireMeSection />
+      <ContactSection />
       <Footer />
       {loading && (
         <CircularProgress

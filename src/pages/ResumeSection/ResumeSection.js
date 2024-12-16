@@ -5,7 +5,7 @@ import Timeline from "@/components/Timeline/Timeline";
 import { timelineElements } from "../../app/data/timelienEvents";
 import { motion } from "framer-motion";
 
-const MyResume = () => {
+const ResumeSection = () => {
   return (
     <Container>
       <motion.div
@@ -21,4 +21,4 @@ const MyResume = () => {
   );
 };
 
-export default MyResume;
+export default ResumeSection;

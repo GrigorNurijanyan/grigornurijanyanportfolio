@@ -6,7 +6,7 @@ import { Card, CardBody, CardHeader, Image } from "@nextui-org/react";
 import { motion } from "framer-motion";
 import { worksList } from "../../app/data/workList";
 
-const Works = () => {
+const WorksSection = () => {
   return (
     <div className="bg-blue-700 w-full">
       <Container>
@@ -58,4 +58,4 @@ const Works = () => {
   );
 };
 
-export default Works;
+export default WorksSection;

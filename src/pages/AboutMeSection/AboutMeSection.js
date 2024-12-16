@@ -1,9 +1,15 @@
-import React from "react";
+import React, { useMemo } from "react";
 import Container from "@/components/Container/Container";
 import Title from "@/components/Title/Title";
 import { motion } from "framer-motion";
 
-const AboutMe = () => {
+const AboutMeSection = () => {
+  const contactInfo = useMemo(() => [
+    { label: "Full Name:", value: "Grigor Nurijanyan" },
+    { label: "Phone:", value: "+37477254462" },
+    { label: "Email:", value: "grigornurijanyan@gmail.com" },
+    { label: "Address:", value: "Yerevan, Armenia" },
+  ], []);
   return (
     <Container>
       <motion.div
@@ -22,22 +28,12 @@ const AboutMe = () => {
         className="grid xl:grid-cols-3 gap-4 md:grid-cols-1"
       >
         <div className="grid gap-1">
-          <div className="flex items-center">
-            <span className="min-w-24 font-bold text-md">Full Name:</span>
-            <span>Grigor Nurijanyan</span>
-          </div>
-          <div className="flex items-center">
-            <span className="min-w-24 font-bold text-md">Phone:</span>
-            <span>+37477254462</span>
-          </div>
-          <div className="flex items-center">
-            <span className="min-w-24 font-bold text-md">Email:</span>
-            <span>grigornurijanyan@gmail.com</span>
-          </div>
-          <div className="flex items-center">
-            <span className="min-w-24 font-bold text-md">Address:</span>
-            <span>Yerevan, Armenia</span>
-          </div>
+          {contactInfo.map((info, index) => (
+            <div className="flex items-center" key={index}>
+              <span className="min-w-24 font-bold text-md">{info.label}</span>
+              <span>{info.value}</span>
+            </div>
+          ))}
         </div>
         <div className="col-span-2">
           <p className="text-md1 font-medium mb-2">Hello There!</p>
@@ -65,4 +61,4 @@ const AboutMe = () => {
   );
 };
 
-export default AboutMe;
+export default AboutMeSection;

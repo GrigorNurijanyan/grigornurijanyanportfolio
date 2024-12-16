@@ -7,7 +7,7 @@ import { Resend } from "resend";
 
 const resend = new Resend("re_8HrTv1gH_GFbfQTq9suxM8sxuqYaLb4LZ");
 
-const Contact = () => {
+const ContactSection = () => {
   return (
     <div
       id={"contactPage"}
@@ -103,4 +103,4 @@ const Contact = () => {
   );
 };
 
-export default Contact;
+export default ContactSection;

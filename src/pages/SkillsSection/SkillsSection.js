@@ -5,7 +5,7 @@ import React from "react";
 import { skillsList } from "../../app/data/skillsList";
 import { motion } from "framer-motion";
 
-const Skills = () => {
+const SkillsSection = () => {
   const [isShow, setIsShow] = React.useState(false);
 
   React.useEffect(() => {
@@ -92,4 +92,4 @@ const Skills = () => {
   );
 };
 
-export default Skills;
+export default SkillsSection;

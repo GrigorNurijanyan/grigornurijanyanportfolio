@@ -4,7 +4,7 @@ import Container from "@/components/Container/Container";
 import { Button } from "@nextui-org/react";
 import { motion } from "framer-motion";
 
-const HireMe = () => {
+const HireMeSection = () => {
   return (
     <div className="bg-blue-700 w-full">
       <Container>
@@ -43,4 +43,4 @@ const HireMe = () => {
   );
 };
 
-export default HireMe;
+export default HireMeSection;
