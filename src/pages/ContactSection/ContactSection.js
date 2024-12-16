@@ -4,12 +4,14 @@ import ContactImg from "../../assets/contact.jpg";
 import { Button, Input, Textarea } from "@nextui-org/react";
 import { motion } from "framer-motion";
 import { Resend } from "resend";
+import P from "@/components/HtmlTags/P";
+import Div from "@/components/HtmlTags/Div";
 
 const resend = new Resend("re_8HrTv1gH_GFbfQTq9suxM8sxuqYaLb4LZ");
 
 const ContactSection = () => {
   return (
-    <div
+    <Div
       id={"contactPage"}
       className="flex flex-col-reverse sm:flex-row w-full"
     >
@@ -33,8 +35,8 @@ const ContactSection = () => {
         viewport={{ once: true }}
         className="sm:w-1/2 w-full sm:p-10 p-5"
       >
-        <p className="text-md2 font-medium">Contact</p>
-        <div className="grid gap-5 mt-10">
+        <P className="text-md2 font-medium">Contact</P>
+        <Div className="grid gap-5 mt-10">
           <Input
             type="email"
             label="Your Firstname"
@@ -97,9 +99,9 @@ const ContactSection = () => {
           >
             Send Message
           </Button>
-        </div>
+        </Div>
       </motion.div>
-    </div>
+    </Div>
   );
 };
 

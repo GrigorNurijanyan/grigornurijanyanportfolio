@@ -3,8 +3,11 @@ import { Kaushan_Script } from "next/font/google";
 import { Avatar, Link } from "@nextui-org/react";
 import { motion } from "framer-motion";
 import profileImage from '../../assets/profpic.jpeg';
-import "./HeroSection.css";
 import { socialMediaLinks } from "@/app/data/socialMediaLinks";
+import Div from "@/components/HtmlTags/Div";
+import H1 from "@/components/HtmlTags/H1";
+import H3 from "@/components/HtmlTags/H3";
+import "./HeroSection.css";
 
 const kuashan = Kaushan_Script({
   subsets: ["latin"],
@@ -30,7 +33,7 @@ const HeroSection = () => {
     }
   }, [isOpen]);
   return (
-    <div
+    <Div
       className={`home_page_banner flex justify-center items-center ${isOpen ? "open" : ""
         }`}
     >
@@ -54,11 +57,11 @@ const HeroSection = () => {
           className="w-44 h-44 text-large personal_image"
           onClick={() => setOpen(!isOpen)}
         />
-        <h1 className={`${kuashan.className} sm:text-xl text-md2  text-white`}>
+        <H1 className={`${kuashan.className} sm:text-xl text-md2  text-white`}>
           Grigor Nurijanyan
-        </h1>
-        <h3 className="text-md text-white mt-2">Web Developer</h3>
-        <div className="grid gap-4 grid-cols-3 mt-5">
+        </H1>
+        <H3 className="text-md text-white mt-2">Web Developer</H3>
+        <Div className="grid gap-4 grid-cols-3 mt-5">
           {socialMediaLinks.map((link, index) => (
             <Link
               key={index}
@@ -71,9 +74,9 @@ const HeroSection = () => {
               {link.icon}
             </Link>
           ))}
-        </div>
+        </Div>
       </motion.div>
-    </div>
+    </Div>
   );
 };
 

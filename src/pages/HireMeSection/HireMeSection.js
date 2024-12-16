@@ -3,10 +3,12 @@ import Title from "@/components/Title/Title";
 import Container from "@/components/Container/Container";
 import { Button } from "@nextui-org/react";
 import { motion } from "framer-motion";
+import Div from "@/components/HtmlTags/Div";
+import P from "@/components/HtmlTags/P";
 
 const HireMeSection = () => {
   return (
-    <div className="bg-blue-700 w-full">
+    <Div className="bg-blue-700 w-full">
       <Container>
         <motion.div
           initial={{ y: 100, opacity: 0 }}
@@ -15,7 +17,7 @@ const HireMeSection = () => {
           viewport={{ once: true }}
         >
           <Title className={"text-white mb-10"}>Hire Me!</Title>
-          <p className={"text-white text-center max-w-screen-md mx-auto"}>
+          <P className={"text-white text-center max-w-screen-md mx-auto"}>
             <strong className="text-md1 block">
               Looking for a skilled web developer?
             </strong>
@@ -23,7 +25,7 @@ const HireMeSection = () => {
             websites that drive results. With experience in developing and
             maintaining high-traffic sites, I can turn your vision into reality.
             Lets build something great together!
-          </p>
+          </P>
           <Button
             onClick={() => {
               const contactPart = document.getElementById("contactPage");
@@ -39,7 +41,7 @@ const HireMeSection = () => {
           </Button>
         </motion.div>
       </Container>
-    </div>
+    </Div>
   );
 };
 

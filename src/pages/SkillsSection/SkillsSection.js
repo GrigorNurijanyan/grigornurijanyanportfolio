@@ -4,6 +4,7 @@ import { CircularProgress } from "@nextui-org/react";
 import React from "react";
 import { skillsList } from "../../app/data/skillsList";
 import { motion } from "framer-motion";
+import Div from "@/components/HtmlTags/Div";
 
 const SkillsSection = () => {
   const [isShow, setIsShow] = React.useState(false);
@@ -41,7 +42,7 @@ const SkillsSection = () => {
       >
         <Title>Skills</Title>
       </motion.div>
-      <div
+      <Div
         id={"worksPart"}
         className="grid lg:grid-cols-5 md:grid-cols-4 sm:grid-cols-3 grid-cols-2  gap-5"
       >
@@ -87,7 +88,7 @@ const SkillsSection = () => {
             </motion.div>
           );
         })}
-      </div>
+      </Div>
     </Container>
   );
 };

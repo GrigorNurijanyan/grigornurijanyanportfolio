@@ -5,10 +5,11 @@ import Title from "@/components/Title/Title";
 import { Card, CardBody, CardHeader, Image } from "@nextui-org/react";
 import { motion } from "framer-motion";
 import { worksList } from "../../app/data/workList";
+import Div from "@/components/HtmlTags/Div";
 
 const WorksSection = () => {
   return (
-    <div className="bg-blue-700 w-full">
+    <Div className="bg-blue-700 w-full">
       <Container>
         <motion.div
           initial={{ y: 100, opacity: 0 }}
@@ -54,7 +55,7 @@ const WorksSection = () => {
           })}
         </div>
       </Container>
-    </div>
+    </Div>
   );
 };
 
