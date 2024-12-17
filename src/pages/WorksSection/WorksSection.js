@@ -6,6 +6,7 @@ import { Card, CardBody, CardHeader, Image } from "@nextui-org/react";
 import { motion } from "framer-motion";
 import { worksList } from "../../app/data/workList";
 import Div from "@/components/HtmlTags/Div";
+import H3 from "@/components/HtmlTags/H3";
 
 const WorksSection = () => {
   return (
@@ -40,7 +41,7 @@ const WorksSection = () => {
                   }}
                 >
                   <CardHeader className="pb-0 pt-2 px-4 flex-col items-start">
-                    <h4 className="font-bold text-large">{item.name}</h4>
+                    <H3 className="font-bold text-large">{item.name}</H3>
                   </CardHeader>
                   <CardBody className="overflow-visible py-2">
                     <Image
