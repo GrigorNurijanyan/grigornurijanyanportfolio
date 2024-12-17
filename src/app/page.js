@@ -1,14 +1,16 @@
 "use client";
 import React, { useEffect, useState } from "react";
-import AboutMeSection from "@/pages/AboutMeSection/AboutMeSection";
-import ContactSection from "@/pages/ContactSection/ContactSection";
-import Footer from "@/pages/Footer/Footer";
-import HireMeSection from "@/pages/HireMeSection/HireMeSection";
-import HeroSection from "@/pages/HeroSection/HeroSection";
-import ResumeSection from "@/pages/ResumeSection/ResumeSection";
-import SkillsSection from "@/pages/SkillsSection/SkillsSection";
-import WorksSection from "@/pages/WorksSection/WorksSection";
 import { CircularProgress } from "@nextui-org/react";
+import dynamic from "next/dynamic";
+
+const HeroSection = dynamic(() => import("@/pages/HeroSection/HeroSection"))
+const AboutMeSection = dynamic(() => import("@/pages/AboutMeSection/AboutMeSection"))
+const ResumeSection = dynamic(() => import("@/pages/ResumeSection/ResumeSection"))
+const WorksSection = dynamic(() => import("@/pages/WorksSection/WorksSection"))
+const SkillsSection = dynamic(() => import("@/pages/SkillsSection/SkillsSection"))
+const HireMeSection = dynamic(() => import("@/pages/HireMeSection/HireMeSection"))
+const ContactSection = dynamic(() => import("@/pages/ContactSection/ContactSection"))
+const Footer = dynamic(() => import("@/pages/Footer/Footer"))
 
 const Home = () => {
   const [loading, setLoading] = useState(true);
