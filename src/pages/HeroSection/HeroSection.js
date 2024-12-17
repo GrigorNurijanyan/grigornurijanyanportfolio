@@ -55,6 +55,8 @@ const HeroSection = () => {
           color="default"
           src={profileImage.src}
           srcSet={profileImage.srcSet}
+          fallback={'Loading...'}
+          showFallback
           className="w-44 h-44 text-large personal_image"
           onClick={() => setOpen(!isOpen)}
         />
