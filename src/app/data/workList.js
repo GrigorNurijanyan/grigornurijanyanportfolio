@@ -1,8 +1,8 @@
-import matador from '../../assets/matador.png';
-import cargo from '../../assets/14cargo.png';
-import ubicrosspro from '../../assets/ubicrosspro.png';
-import anthonyprichards from '../../assets/anthonyprichards.png';
-import matadorextension from '../../assets/matadorextension.png';
+import matador from '../../assets/matador.avif';
+import cargo from '../../assets/14cargo.avif';
+import ubicrosspro from '../../assets/ubicrosspro.avif';
+import anthonyprichards from '../../assets/anthonyprichards.avif';
+import matadorextension from '../../assets/matadorextension.avif';
 
 export const worksList = [
   {

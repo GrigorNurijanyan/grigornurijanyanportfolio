@@ -2,7 +2,7 @@ import React, { memo, useEffect, useState } from "react";
 import { Kaushan_Script } from "next/font/google";
 import { Avatar, Link } from "@nextui-org/react";
 import { motion } from "framer-motion";
-import profileImage from '../../assets/profpic.jpeg';
+import profileImage from '../../assets/profpic.avif';
 import { socialMediaLinks } from "@/app/data/socialMediaLinks";
 import Div from "@/components/HtmlTags/Div";
 import H1 from "@/components/HtmlTags/H1";
