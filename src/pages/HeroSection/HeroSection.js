@@ -6,7 +6,7 @@ import profileImage from '../../assets/profpic.jpeg';
 import { socialMediaLinks } from "@/app/data/socialMediaLinks";
 import Div from "@/components/HtmlTags/Div";
 import H1 from "@/components/HtmlTags/H1";
-import H3 from "@/components/HtmlTags/H3";
+import H2 from "@/components/HtmlTags/H2";
 import "./HeroSection.css";
 
 const kuashan = Kaushan_Script({
@@ -60,7 +60,7 @@ const HeroSection = () => {
         <H1 className={`${kuashan.className} sm:text-xl text-md2  text-white`}>
           Grigor Nurijanyan
         </H1>
-        <H3 className="text-md text-white mt-2">Web Developer</H3>
+        <H2 className="text-md text-white mt-2">Web Developer</H2>
         <Div className="grid gap-4 grid-cols-3 mt-5">
           {socialMediaLinks.map((link, index) => (
             <Link
