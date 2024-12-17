@@ -1,4 +1,4 @@
-import React from "react";
+import React, { memo } from "react";
 import Container from "@/components/Container/Container";
 import Title from "@/components/Title/Title";
 import Timeline from "@/components/Timeline/Timeline";
@@ -21,4 +21,4 @@ const ResumeSection = () => {
   );
 };
 
-export default ResumeSection;
+export default memo(ResumeSection);

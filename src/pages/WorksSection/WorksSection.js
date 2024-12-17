@@ -1,5 +1,5 @@
 "use client";
-import React from "react";
+import React, { memo } from "react";
 import Container from "@/components/Container/Container";
 import Title from "@/components/Title/Title";
 import { Card, CardBody, CardHeader, Image } from "@nextui-org/react";
@@ -60,4 +60,4 @@ const WorksSection = () => {
   );
 };
 
-export default WorksSection;
+export default memo(WorksSection);

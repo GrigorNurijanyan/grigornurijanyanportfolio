@@ -1,5 +1,5 @@
+import React, { memo } from "react";
 import Div from "@/components/HtmlTags/Div";
-import React from "react";
 
 const Footer = () => {
   return (
@@ -15,4 +15,4 @@ const Footer = () => {
   );
 };
 
-export default Footer;
+export default memo(Footer);

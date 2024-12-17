@@ -1,7 +1,7 @@
 import Container from "@/components/Container/Container";
 import Title from "@/components/Title/Title";
 import { CircularProgress } from "@nextui-org/react";
-import React from "react";
+import React, { memo } from "react";
 import { skillsList } from "../../app/data/skillsList";
 import { motion } from "framer-motion";
 import Div from "@/components/HtmlTags/Div";
@@ -93,4 +93,4 @@ const SkillsSection = () => {
   );
 };
 
-export default SkillsSection;
+export default memo(SkillsSection);

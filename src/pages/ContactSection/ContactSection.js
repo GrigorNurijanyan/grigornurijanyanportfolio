@@ -1,4 +1,4 @@
-import React from "react";
+import React, { memo } from "react";
 import Image from "next/image";
 import ContactImg from "../../assets/contact.jpg";
 import { Button, Input, Textarea } from "@nextui-org/react";
@@ -105,4 +105,4 @@ const ContactSection = () => {
   );
 };
 
-export default ContactSection;
+export default memo(ContactSection);

@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { memo, useEffect, useState } from "react";
 import { Kaushan_Script } from "next/font/google";
 import { Avatar, Link } from "@nextui-org/react";
 import { motion } from "framer-motion";
@@ -54,6 +54,7 @@ const HeroSection = () => {
           isBordered
           color="default"
           src={profileImage.src}
+          srcSet={profileImage.srcSet}
           className="w-44 h-44 text-large personal_image"
           onClick={() => setOpen(!isOpen)}
         />
@@ -81,4 +82,4 @@ const HeroSection = () => {
   );
 };
 
-export default HeroSection;
+export default memo(HeroSection);

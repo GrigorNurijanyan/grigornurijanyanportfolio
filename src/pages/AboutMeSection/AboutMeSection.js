@@ -1,4 +1,4 @@
-import React from "react";
+import React, { memo } from "react";
 import Container from "@/components/Container/Container";
 import Title from "@/components/Title/Title";
 import { motion } from "framer-motion";
@@ -59,4 +59,4 @@ const AboutMeSection = () => {
   );
 };
 
-export default AboutMeSection;
+export default memo(AboutMeSection);

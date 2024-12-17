@@ -1,4 +1,4 @@
-import React from "react";
+import React, { memo } from "react";
 import Title from "@/components/Title/Title";
 import Container from "@/components/Container/Container";
 import { Button } from "@nextui-org/react";
@@ -45,4 +45,4 @@ const HireMeSection = () => {
   );
 };
 
-export default HireMeSection;
+export default memo(HireMeSection);
