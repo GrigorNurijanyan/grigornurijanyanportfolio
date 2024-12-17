@@ -64,6 +64,7 @@ const HeroSection = () => {
         <Div className="grid gap-4 grid-cols-3 mt-5">
           {socialMediaLinks.map((link, index) => (
             <Link
+              aria-label={link.name}
               key={index}
               className="bg-white rounded-md w-10 h-10 text-black-600 flex justify-center items-center"
               color="foreground"
