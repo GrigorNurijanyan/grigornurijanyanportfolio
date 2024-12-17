@@ -45,6 +45,8 @@ const WorksSection = () => {
                   </CardHeader>
                   <CardBody className="overflow-visible py-2">
                     <Image
+                      width={'auto'}
+                      height={'auto'}
                       alt="Card background"
                       className="object-cover rounded-xl"
                       src={item.image}
