@@ -3,7 +3,13 @@ const nextConfig = {
   reactStrictMode: true,
   output: "standalone",
   images: {
-    domains: ["https://grigornurijanyan.github.io/grigornurijanyanportfolio"],
+    remotePatterns: [
+      {
+        protocol: "https",
+        hostname: "grigornurijanyan.github.io",
+        pathname: "/grigornurijanyanportfolio/**",
+      },
+    ],
   },
 };
 
